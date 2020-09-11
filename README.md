@@ -15,6 +15,13 @@ sudo apt-get install libprotobuf-java protobuf-compiler\
 
 For MacOS and Windows, we might need to change the pom.xml or manually complie the proto object file.
 
+On MacOS, you can:
++ Install `protobuf` via Homebrew: `brew install protobuf`.
++ Manually compile the proto object file:
+  ```bash
+  $ cd supl-client
+  $ protoc --java_out=src/main/java src/main/proto/ephemeris.proto
+  ```
 
 ## Basic Usage
 git clone this repo
