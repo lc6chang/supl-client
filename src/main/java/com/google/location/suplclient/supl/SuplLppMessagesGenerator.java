@@ -216,8 +216,8 @@ final class SuplLppMessagesGenerator extends SuplMessagesGenerator {
 
     // Prepare request for GLONASS assistance data
     GNSS_NavigationModelSupport glonassNav = new GNSS_NavigationModelSupport();
-    gpsNav.setClockModelToNewInstance().set_model_4();
-    gpsNav.setOrbitModelToNewInstance().set_model_4();
+    glonassNav.setClockModelToNewInstance().set_model_4();
+    glonassNav.setOrbitModelToNewInstance().set_model_4();
 
     GNSS_GenericAssistDataSupportElement glonassAssistance =
         new GNSS_GenericAssistDataSupportElement();
